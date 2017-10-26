@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="Bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<style>
+    *{
+        margin:0;
+        padding:0;
+    }
+    .nav {
+        width: 100%;
+        height: 36px;
+        background-color: #000000;
+        margin-bottom:20px;
+    }
+    .nav > span{
+        color: #fff;
+        float:left;
+        height:36px;
+        line-height:36px;
+    }
+    .nav > .navbar-form {
+        display:block;
+        margin:0;
+        float: right;
+    }
+    .nav > .navbar-form > input.form-control {
+        height: 36px;
+    }
+    .nav > .navbar-form > button {
+        background-color:#317BB8;
+        color:#fff;
+        outline-color: #ffffff;
+        border:none;
+    }
+    .nav > .right {
+        float: right;
+        margin-left: 20px;
+        margin-right: 20px;
+        height: 36px;
+    }
+    .nav > .right > ul {
+        height: 36px;
+        width: 132px;
+        list-style:none;
+    }
+    .nav > .right > ul > li {
+        width: 44px;
+        height: 100%;
+        float:left;
+        line-height:36px;
+    }
+    .nav > .right > ul > li > a{
+        color: #fff;
+        text-decoration: none;
+    }
+    .main > .inner_c {
+        width:1026px;
+        height:900px;
+        margin:0 auto;
+    }
+    .main > .inner_c > div.product-list {
+        margin-right:28px;
+        width:236px;
+        float:left;
+    }
+    .main > .inner_c > div.product-list > .electric-pro {
+        width:236px;
+        height:216px;
+
+    }
+    .main > .inner_c > div.product-list > .electric-pro > ul.list-group > li {
+        height:36px;
+    }
+    .main > .inner_c > div.product-list > .electric-pro > ul.list-group > li > span ,
+    .main > .inner_c > div.product-list > .intelligent-digital > ul.list-group > li > span,
+    .main > .inner_c > div.product-list > .phone-module > ul.list-group > li > span{
+        border-radius: 0;
+    }
+    .main > .inner_c > div.product-list > .electric-pro > ul.list-group > li.first ,
+    .main > .inner_c > div.product-list > .intelligent-digital > ul.list-group > li.first,
+    .main > .inner_c > div.product-list > .phone-module  > ul.list-group > li.first
+    {
+        width:236px;
+        height:36px;
+        line-height:36px;
+        padding-left:16px;
+        color:#fff;
+    }
+    .main > .inner_c > div.product-list > .intelligent-digital {
+        width:236px;
+        height:165px;
+    }
+    .main > .inner_c > div.product-list > .intelligent-digital > ul.list-group > li.first {
+
+    }
+    .main > .inner_c > div.product-list > .phone-module {
+        width:236px;
+        height:280px;
+    }
+    .main > .inner_c > div.product {
+        height:900px;
+        width: 762px;
+        float: left;
+    }
+    /*.main > .inner_c > div.product > .main-product {*/
+        /*height: 850px;*/
+    /*}*/
+    .main > .inner_c > div.product > .main-product > div.shouye {
+        height:32px;
+        width:732px;
+        background-color:#F5F5F5;
+        margin-bottom:18px;
+    }
+    .main > .inner_c > div.product > .main-product > div.shouye > a {
+        display:block;
+        float: left;
+        height: 32px;
+        line-height: 32px;
+        margin-right: 5px;
+
+    }
+    .main > .inner_c > div.product > .main-product > div.shouye > span {
+        display: inline-block;
+        float: left;
+        height: 32px;
+        line-height: 32px;
+        margin-right: 5px;
+    }
+    .main > .inner_c > div.product > div.main-product{
+        height:800px;
+
+    }
+    .main > .inner_c > div.product > div.main-product > div.row > div.thumbnail > div.caption {
+        position: relative;
+    }
+    .main > .inner_c > div.product > div.main-product > div.row > div.thumbnail > div.caption > a{
+        display: block;
+        margin-left: 40px;
+        width: 72px;
+        position: absolute;
+        top: 0;
+        left: 50px;
+    }
+    .footer{
+        height: 52px;
+        width: 100%;
+        background-color: #000;
+    }
+
+</style>
+<body>
+<!--导航栏-->
+<div class="nav">
+    <span class="logo">电子商城</span>
+    <div class="right">
+        <ul>
+            <li><a href="#">商品</a></li>
+            <li><a href="#">注册</a></li>
+            <li><a href="#">登录</a></li>
+        </ul>
+    </div>
+    <form class="navbar-form " role="search">
+        <div class="form-group">
+            <input type="text" class="form-control" placeholder="输入商品名称">
+        </div>
+        <button type="submit" class="btn btn-default">搜索</button>
+    </form>
+
+</div>
+<!--主体-->
+<div class="main">
+    <div class="inner_c">
+        <div class="product-list">
+            <div class="electric-pro">
+                <ul class="list-group">
+                    <li class="first" style="background-color:#347AB6">电子产品</li>
+                    <li class="list-group-item">
+                        <span class="badge" style="background-color:#377EB2">234</span>
+                        手机
+                    </li>
+                    <li class="list-group-item">
+                        <span class="badge" style="background-color:#5BB657">34</span>
+                        笔记本
+                    </li>
+                    <li class="list-group-item">
+                        <span class="badge" style="background-color:#E05858">4</span>
+                        平板
+                    </li>
+                    <li class="list-group-item">
+                        <span class="badge" style="background-color:#5BBFE1">434</span>
+                        显示器
+                    </li>
+                    <li class="list-group-item">
+                        <span class="badge" style="background-color:#58B656">34</span>
+                        游戏机
+                    </li>
+                </ul>
+            </div>
+            <div class="intelligent-digital">
+                <ul class="list-group">
+                    <li class="first" style="background-color:#3C763C">智能数码</li>
+                    <li class="list-group-item">
+                        <span class="badge" style="background-color:#DA534F">330</span>
+                        手环
+                    </li>
+                    <li class="list-group-item">
+                        <span class="badge" style="background-color:#5DBA6A">340</span>
+                        手表
+                    </li>
+                    <li class="list-group-item">
+                        <span class="badge" style="background-color:#65BEE8">735</span>
+                        VR眼镜
+                    </li>
+                </ul>
+            </div>
+            <div class="phone-module">
+                <ul class="list-group">
+                    <li class="first" style="background-color:#347AB6">手机配件</li>
+                    <li class="list-group-item">
+                        <span class="badge" style="background-color:#F4AB4D">456</span>
+                        耳机
+                    </li>
+                    <li class="list-group-item">
+                        <span class="badge" style="background-color:#5EB85E">156</span>
+                        移动电源
+                    </li>
+                    <li class="list-group-item">
+                        <span class="badge" style="background-color:#5CC0D8">400</span>
+                        手机壳
+                    </li>
+                    <li class="list-group-item">
+                        <span class="badge" style="background-color:#327CB9">89</span>
+                        数据线
+                    </li>
+                    <li class="list-group-item">
+                        <span class="badge" style="background-color:#DA504D">90</span>
+                        手机支架
+                    </li>
+                    <li class="list-group-item">
+                        <span class="badge" style="background-color:#F4AB4D">567</span>
+                        手机贴膜
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="product">
+            <div class="main-product">
+                <div class="shouye">
+                    <a href="#">首页</a>
+                    <span>/</span>
+                    <span>手机</span>
+                </div>
+                <div class="row" style="width:762px ;height: 400px">
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <img src="img/手机.jpg" alt="...">
+                            <div class="caption">
+                                <h3 style="text-align: center;font-size: 18px;font-weight: 900">OPPO</h3>
+                                <h3 style="text-align: center;font-size: 16px;color: #D61412;font-weight: 900">1599</h3>
+                                <h3 style="text-align: center; font-size:12px;color: #709CB5;font-weight: 600">OPPO A57 3GB+32GB内存板</h3>
+                                <h3 style="text-align: center; font-size:12px">黑色 全网通4G手机 双卡双待</h3>
+                                 <a href="#" class="btn btn-primary" role="button" style="background-color: #5BB85F ; border: none">立即购买</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <img src="img/手机.jpg" alt="...">
+                            <div class="caption">
+                                <h3 style="text-align: center;font-size: 18px;font-weight: 900">荣耀</h3>
+                                <h3 style="text-align: center;font-size: 16px;color: #D61412;font-weight: 900">1598</h3>
+                                <h3 style="text-align: center; font-size:12px;color: #709CB5;font-weight: 600">荣耀8 3GB+32GB</h3>
+                                <h3 style="text-align: center; font-size:12px">全网通版 珠光白</h3>
+                                <a href="#" class="btn btn-primary" role="button" style="background-color: #5BB85F ; border: none">立即购买</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <img src="img/手机.jpg" alt="...">
+                            <div class="caption">
+                                <h3 style="text-align: center;font-size: 18px;font-weight: 900">iPhone 7</h3>
+                                <h3 style="text-align: center;font-size: 16px;color: #D61412;font-weight: 900">6388</h3>
+                                <h3 style="text-align: center; font-size:12px;color: #709CB5;font-weight: 600">Apple iPhone 7 Plus(A1661)128G</h3>
+                                <h3 style="text-align: center; font-size:12px">金色 移动联通电信4G手机</h3>
+                                 <a href="#" class="btn btn-primary" role="button" style="background-color: #5BB85F ; border: none">立即购买</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shouye">
+                    <a href="#">首页</a>
+                    <span>/</span>
+                    <span>手机</span>
+                </div>
+
+                <div class="row" style="width:762px;height: 400px">
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <img src="img/笔记本.jpg" alt="...">
+                            <div class="caption">
+                                <h3 style="text-align: center;font-size: 18px;font-weight: 900">MacBook Air</h3>
+                                <h3 style="text-align: center;font-size: 16px;color: #D61412;font-weight: 900">5988</h3>
+                                <h3 style="text-align: center; font-size:12px;color: #709CB5;font-weight: 600">Apple MacBook Air 13.3英寸笔记本电脑</h3>
+                                <h3 style="text-align: center; font-size:12px">黑色 全网通4G手机 双卡双待</h3>
+                                 <a href="#" class="btn btn-primary" role="button" style="background-color: #5BB85F ; border: none">立即购买</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <img src="img/笔记本.jpg" alt="...">
+                            <div class="caption">
+                                <h3 style="text-align: center;font-size: 18px;font-weight: 900">戴尔DELL灵越</h3>
+                                <h3 style="text-align: center;font-size: 16px;color: #D61412;font-weight: 900">4199</h3>
+                                <h3 style="text-align: center; font-size:12px;color: #709CB5;font-weight: 600">戴尔DELL灵越5565-R2945A15.6英寸笔记本电脑</h3>
+                                <h3 style="text-align: center; font-size:12px">灰四核处理器 8G大内存 256SSD</h3>
+                                <a href="#" class="btn btn-primary" role="button" style="background-color: #5BB85F ; border: none">立即购买</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="thumbnail">
+                            <img src="img/笔记本.jpg" alt="...">
+                            <div class="caption">
+                                <h3 style="text-align: center;font-size: 18px;font-weight: 900">OPPO</h3>
+                                <h3 style="text-align: center;font-size: 16px;color: #D61412;font-weight: 900">1599</h3>
+                                <h3 style="text-align: center; font-size:12px;color: #709CB5;font-weight: 600">OPPO A57 3GB+32GB内存板</h3>
+                                <h3 style="text-align: center; font-size:12px">黑色 全网通4G手机 双卡双待</h3>
+                                <a href="#" class="btn btn-primary" role="button" style="background-color: #5BB85F ; border: none">立即购买</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div></div>
+<!--底部-->
+<div class="footer">
+    <span class="glyphicon glyphicon-copyright-mark" style="text-align: center;display: block;color: #fff;height: 52px;line-height: 52px;font-size: 14px">2017 | Email:info@itbegin.com</span>
+</div>
+</body>
+</html>
